@@ -10,7 +10,7 @@ token_file = os.path.abspath(os.path.join(root_directory, ".token.yaml"))
 # bot responds when mentioned e.g. `@bot_name`
 bot = commands.Bot(command_prefix=commands.when_mentioned, pm_help=None,
                     case_insensitive=False)
-# If you want it to respond to a message instead, use this line instead:
+# If you want it to respond to a symbol instead, use this line instead:
 # bot = commands.Bot(command_prefix="!", pm_help=None, case_insensitive=False)
 
 bot.remove_command('help') # remove default help
@@ -78,7 +78,7 @@ async def on_command_error(error, ctx):
         raise error
 
 if os.path.exists(token_file):
-    with open(os.path.join(root_directory, ".token.yaml")) as token_f:
+    with open(token_file) as token_f:
         token = yaml.load(token_f)["token"]
     bot.run(token)
 else:

@@ -7,7 +7,7 @@ Boilerplate code for creating a bot in [discordpy](https://github.com/Rapptz/dis
 `./install-python-35.sh` and `./setup.sh` installs python3.5.5 and sets up a virtual environment to run discordpy in. 
 
 ```
-git clone https://github.com/seanbreckenridge/commands-discordpy-starter discord-bot
+git clone https://github.com/purarue/commands-discordpy-starter discord-bot
 cd discord-bot
 # If you don't have python3.5 installed on your system, install it using pyenv:
 # If you get zlib errors check the comments in `install-python-35.sh`
